@@ -25,9 +25,9 @@ func evaluate(_ str: String)->Int{
         if(count == 0){
             if(array[i] == "+" || array[i] == "*"){
 
-            let left = 6//evaluate(array[0, i])
+            let left = evaluate(array[0, i])
             var calc = array[i]
-            let right = 3//evaluate(array[i + 1, array.count])
+            let right = evaluate(array[i + 1, array.count])
             
             if(calc == "+"){
                     return left + right
